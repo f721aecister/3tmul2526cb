@@ -2,7 +2,7 @@
 
 body { font-family: 'Segoe UI', sans-serif; background-color: #1a1a1a; color: white; }
 
-/* Ecrã Inicial */
+/* --- Ecrã Inicial --- */
 .home-bg {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
                 url('assets/images/pap-preview.png');
@@ -13,7 +13,6 @@ body { font-family: 'Segoe UI', sans-serif; background-color: #1a1a1a; color: wh
     flex-direction: column;
 }
 
-/* Menu e Hero */
 .menu-container { padding: 20px; }
 .hamburger { font-size: 30px; cursor: pointer; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
 .hidden { display: none; }
@@ -32,10 +31,39 @@ body { font-family: 'Segoe UI', sans-serif; background-color: #1a1a1a; color: wh
 
 .main-logo { width: 120px; border-radius: 20px; margin-bottom: 20px; }
 
-/* Página PAP */
-.pap-content { padding: 20px; }
-.pap-image { width: 90%; max-width: 400px; display: block; margin: 0 auto 20px auto; border-radius: 15px; }
-.pap-text { font-size: 16px; line-height: 1.6; max-width: 500px; margin: 0 auto; padding: 20px; text-align: justify; }
-.btn { display: block; width: 80%; max-width: 300px; background: white; color: black; text-align: center; padding: 15px; margin: 20px auto; border-radius: 12px; text-decoration: none; font-weight: bold; }
+/* --- Página PAP --- */
+/* Garantir que o header e a main da página PAP centralizam tudo */
+header { text-align: center; padding: 30px 20px 10px 20px; }
+header .bio { color: rgba(255,255,255,0.7); font-size: 14px; margin-top: 5px; }
 
-footer { text-align: center; color: rgba(255,255,255,0.7); font-size: 10px; padding: 10px; }
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.pap-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.pap-image { width: 90%; max-width: 400px; display: block; margin: 0 auto 20px auto; border-radius: 15px; }
+.pap-text { font-size: 16px; line-height: 1.6; max-width: 500px; margin: 0 auto; padding: 10px; text-align: justify; }
+
+/* Botão e Rodapé */
+.btn { 
+    display: block; 
+    width: 80%; 
+    max-width: 300px; 
+    background: white; 
+    color: black; 
+    text-align: center; 
+    padding: 15px; 
+    margin: 20px auto; 
+    border-radius: 12px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+footer { text-align: center; color: rgba(255,255,255,0.7); font-size: 10px; padding: 10px; margin-top: auto; }
