@@ -1,7 +1,7 @@
 /* Fundo com imagem da PAP */
 .home-bg {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url('assets/images/pap-preview.jpg');
+                url('assets/images/pap-preview.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
